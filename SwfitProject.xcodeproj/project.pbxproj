@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E4811DE275BB31D000B7855 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4811DD275BB31D000B7855 /* ViewModel.swift */; };
+		2E4811E1275BC71D000B7855 /* ViewTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4811E0275BC71D000B7855 /* ViewTableCell.swift */; };
 		2EC343C3275B7170001D3DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C2275B7170001D3DD4 /* AppDelegate.swift */; };
 		2EC343C5275B7170001D3DD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */; };
 		2EC343C7275B7170001D3DD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C6275B7170001D3DD4 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		0960DEEAC4198FCD8F257B34 /* Pods-SwfitProject-SwfitProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwfitProject-SwfitProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-SwfitProject-SwfitProjectUITests/Pods-SwfitProject-SwfitProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		19D233B9370F8F44A5DDDDB6 /* Pods-SwfitProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwfitProject.release.xcconfig"; path = "Target Support Files/Pods-SwfitProject/Pods-SwfitProject.release.xcconfig"; sourceTree = "<group>"; };
+		2E4811DD275BB31D000B7855 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2E4811E0275BC71D000B7855 /* ViewTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTableCell.swift; sourceTree = "<group>"; };
 		2EC343BF275B7170001D3DD4 /* SwfitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC343C2275B7170001D3DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E4811DC275BB307000B7855 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2EC343C6275B7170001D3DD4 /* ViewController.swift */,
+				2E4811DD275BB31D000B7855 /* ViewModel.swift */,
+				2E4811E0275BC71D000B7855 /* ViewTableCell.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2E4811DF275BC593000B7855 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2EC343C8275B7170001D3DD4 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
 		2EC343B6275B7170001D3DD4 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +140,8 @@
 			children = (
 				2EC343C2275B7170001D3DD4 /* AppDelegate.swift */,
 				2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */,
-				2EC343C6275B7170001D3DD4 /* ViewController.swift */,
-				2EC343C8275B7170001D3DD4 /* Main.storyboard */,
+				2E4811DC275BB307000B7855 /* Main */,
+				2E4811DF275BC593000B7855 /* StoryBoard */,
 				2EC343CB275B7171001D3DD4 /* Assets.xcassets */,
 				2EC343CD275B7171001D3DD4 /* LaunchScreen.storyboard */,
 				2EC343D0275B7171001D3DD4 /* Info.plist */,
@@ -164,7 +186,6 @@
 				FFF28C5BE9AB40ADC3451FFD /* Pods-SwfitProjectTests.debug.xcconfig */,
 				FB33BFEDD0EE1404E42CD492 /* Pods-SwfitProjectTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,8 +428,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E4811E1275BC71D000B7855 /* ViewTableCell.swift in Sources */,
 				2EC343C7275B7170001D3DD4 /* ViewController.swift in Sources */,
 				2EC343C3275B7170001D3DD4 /* AppDelegate.swift in Sources */,
+				2E4811DE275BB31D000B7855 /* ViewModel.swift in Sources */,
 				2EC343C5275B7170001D3DD4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

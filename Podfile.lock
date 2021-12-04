@@ -14,17 +14,52 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
+  - Alamofire (5.4.4)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxGesture (4.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxOptional (5.0.2):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - AFNetworking
+  - Alamofire
+  - RxCocoa
+  - RxGesture
+  - RxOptional
+  - RxRelay
+  - RxSwift
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - AFNetworking
+    - Alamofire
+    - RxCocoa
+    - RxGesture
+    - RxOptional
+    - RxRelay
+    - RxSwift
+    - SnapKit
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxGesture: f059f2aeef966fb17dad56ee440e76410f10e55f
+  RxOptional: 3664964c96b69dd20c9cf78bdfe546615e26eca8
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 2dad19c9c48434fed61e200e642a3d3b9d7ded20
+PODFILE CHECKSUM: b75d434e259deee86c9f715f2abbe1c8589d3e43
 
 COCOAPODS: 1.10.1
