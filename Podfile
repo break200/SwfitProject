@@ -6,9 +6,15 @@ target 'SwfitProject' do
   use_frameworks!
 
   # Pods for SwfitProject
-
-
   pod 'AFNetworking'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxRelay'
+  pod 'RxOptional'
+  pod 'Alamofire'
+  pod "RxGesture"
+  pod 'SnapKit'
+  
   target 'SwfitProjectTests' do
     inherit! :search_paths
     # Pods for testing
