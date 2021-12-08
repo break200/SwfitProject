@@ -16,7 +16,7 @@ class DataViewModel{
     let output = Output()
     
     struct Input {
-        let list_Data = ["UI","데이터","추가"]
+        let list_Data = ["Lookup(데이터)"]
     }
     
     struct Output {
