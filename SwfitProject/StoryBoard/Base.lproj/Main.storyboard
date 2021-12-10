@@ -28,17 +28,22 @@
                                         <rect key="frame" x="10" y="5" width="394" height="70"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diu-i6-tox">
-                                                <rect key="frame" x="0.0" y="0.0" width="124.5" height="70"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="70"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="UI"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWF-dH-QZT">
-                                                <rect key="frame" x="134.5" y="0.0" width="125" height="70"/>
+                                                <rect key="frame" x="101" y="0.0" width="91" height="70"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Data"/>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyk-ri-T2l">
+                                                <rect key="frame" x="202" y="0.0" width="91" height="70"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Variable"/>
+                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHe-KO-nbt">
-                                                <rect key="frame" x="269.5" y="0.0" width="124.5" height="70"/>
+                                                <rect key="frame" x="303" y="0.0" width="91" height="70"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Other"/>
                                             </button>
@@ -72,6 +77,7 @@
                         <outlet property="btn_Data" destination="IWF-dH-QZT" id="jgD-eL-Qe0"/>
                         <outlet property="btn_Other" destination="GHe-KO-nbt" id="zXS-cp-vzQ"/>
                         <outlet property="btn_UI" destination="diu-i6-tox" id="5Ng-8H-Bbv"/>
+                        <outlet property="btn_Variable" destination="Oyk-ri-T2l" id="C45-GQ-25W"/>
                         <outlet property="contentView" destination="Sso-uh-HRf" id="GFg-iv-9Wi"/>
                     </connections>
                 </viewController>

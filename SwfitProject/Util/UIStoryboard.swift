@@ -14,6 +14,7 @@ extension UIStoryboard {
         case Main
         case UI
         case Data
+        case Variable
         case Other
     }
 

@@ -1,8 +1,8 @@
 //
-//  DataViewController.swift
+//  VariableViewController.swift
 //  SwfitProject
 //
-//  Created by mograine on 2021/12/08.
+//  Created by mograine on 2021/12/11.
 //
 
 import UIKit
@@ -11,17 +11,16 @@ import RxCocoa
 import RxGesture
 
 
-protocol DataViewDelegate{
-    func clickBtnData(check:Bool)
+protocol VariableDelegate{
+    func clickBtnVariable(check:Bool)
 }
 
-
-class DataViewController: BaseViewController {
+class VariableViewController: BaseViewController {
 
     
     @IBOutlet weak var tableView: UITableView!
     
-    var delegate: (DataViewDelegate)?
+    var delegate: (VariableDelegate)?
     
     fileprivate(set) var viewModel = DataViewModel()
     
@@ -39,14 +38,14 @@ class DataViewController: BaseViewController {
 }
 
 
-extension DataViewController: UITableViewDelegate, UITableViewDataSource {
+extension VariableViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.input.list_Data.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "DataTableCell", for: indexPath) as? DataTableCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "VariableTableCell", for: indexPath) as? VariableTableCell else {
             return UITableViewCell()
         }
         cell.lab_Title.text = viewModel.input.list_Data[indexPath.row]
@@ -54,13 +53,13 @@ extension DataViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch indexPath.row{
-          case 0:
-            let lookup : LookupViewController = UIStoryboard.storyboard(storyboard: .Data).instantiateViewController()
-            navigationController?.pushViewController(lookup, animated: true)
-        default:
-            return
-        }
+//        switch indexPath.row{
+//          case 0:
+//            let lookup : LookupViewController = UIStoryboard.storyboard(storyboard: .Data).instantiateViewController()
+//            navigationController?.pushViewController(lookup, animated: true)
+//        default:
+//            return
+//        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

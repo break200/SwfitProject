@@ -12,11 +12,24 @@ import RxCocoa
 
 class LookupViewModel{
    
-    let input = Input()
+    var input = Input()
     let output = Output()
     
     struct Input {
         let list_Data = ["Lookup(데이터)"]
+        
+        //옵져버
+        var myProperty = 5 {
+            //set 되기전에 호출
+            willSet(newPropertyValue) {
+                print("Will set to \(newPropertyValue). Previous value was \(myProperty)")
+            }
+            //set 변경후 호출
+            didSet(oldPropertyValue) {
+                print("Did set to \(myProperty). Previous value was\(oldPropertyValue)")
+            }
+        }
+        
     }
     
     struct Output {

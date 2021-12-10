@@ -16,6 +16,7 @@ class ViewController: BaseViewController {
     
     @IBOutlet weak var btn_UI: UIButton!
     @IBOutlet weak var btn_Data: UIButton!
+    @IBOutlet weak var btn_Variable: UIButton!
     @IBOutlet weak var btn_Other: UIButton!
     
     fileprivate(set) var viewModel = ViewModel()
@@ -52,14 +53,17 @@ class ViewController: BaseViewController {
     func configtabbarBar(){
         let youView : UiinViewController = UIStoryboard.storyboard(storyboard: .UI).instantiateViewController()
         let dataView : DataViewController = UIStoryboard.storyboard(storyboard: .Data).instantiateViewController()
+        let variableView : VariableViewController = UIStoryboard.storyboard(storyboard: .Variable).instantiateViewController()
         let otherView : OtherViewController = UIStoryboard.storyboard(storyboard: .Other).instantiateViewController()
         
         youView.delegate = self
         dataView.delegate = self
+        variableView.delegate = self
         otherView.delegate = self
         
         addChild(youView)
         addChild(dataView)
+        addChild(variableView)
         addChild(otherView)
         //실행시 화면 index
         changeVCFromIndex(from: 0)
@@ -77,6 +81,7 @@ class ViewController: BaseViewController {
             viewModel.input.tabbar_index = 0
             btn_UI.isSelected = true
             btn_Data.isSelected = false
+            btn_Variable.isSelected = false
             btn_Other.isSelected = false
         }else{
 //            view_Title.isHidden = false
@@ -84,19 +89,22 @@ class ViewController: BaseViewController {
                 viewModel.input.tabbar_index = 1
                 btn_UI.isSelected = false
                 btn_Data.isSelected = true
+                btn_Variable.isSelected = false
                 btn_Other.isSelected = false
             }else if index == 2{
                 viewModel.input.tabbar_index = 2
                 btn_UI.isSelected = false
                 btn_Data.isSelected = false
-                btn_Other.isSelected = true
+                btn_Variable.isSelected = true
+                btn_Other.isSelected = false
                 
+            }else if index == 3{
+                viewModel.input.tabbar_index = 3
+                btn_UI.isSelected = false
+                btn_Data.isSelected = false
+                btn_Variable.isSelected = false
+                btn_Other.isSelected = true
             }
-//            else if index == 4{
-//                viewModel.input.tabbar_index_Before = 4
-//            }else if index == 2{
-//                viewModel.input.tabbar_index_Before = 2
-//            }
         }
         
         //뒤로 가기 위한 인덱스값 저장
@@ -165,13 +173,21 @@ class ViewController: BaseViewController {
             self?.changeVCFromIndex(from: 1)
         }.disposed(by: bag)
         
+        //Variable 버튼
+        btn_Variable.rx.tap.bind { [weak self] _ in
+            if self?.btn_Variable.isSelected ?? false{
+                return
+            }
+            self?.changeVCFromIndex(from: 2)
+        }.disposed(by: bag)
+        
         
         //Other 버튼
         btn_Other.rx.tap.bind { [weak self] _ in
             if self?.btn_Other.isSelected ?? false{
                 return
             }
-            self?.changeVCFromIndex(from: 2)
+            self?.changeVCFromIndex(from: 3)
         }.disposed(by: bag)
     }
     
@@ -190,8 +206,17 @@ class OneCheckCall {
 }
 
 //버튼 클릭시 호출
-extension ViewController:UiinViewDelegate,OtherViewDelegate,DataViewDelegate {
+extension ViewController:UiinViewDelegate,OtherViewDelegate,VariableDelegate,DataViewDelegate {
+
     func clickBtnUI(check: Bool) {
+        print(check)
+    }
+
+    func clickBtnData(check: Bool) {
+        print(check)
+    }
+    
+    func clickBtnVariable(check: Bool) {
         print(check)
     }
     
@@ -199,7 +224,5 @@ extension ViewController:UiinViewDelegate,OtherViewDelegate,DataViewDelegate {
         print(check)
     }
     
-    func clickBtnData(check: Bool) {
-        print(check)
-    }
+    
 }
