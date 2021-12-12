@@ -35,6 +35,8 @@
 		2EAF9FB327661316002E01B6 /* AFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB227661316002E01B6 /* AFViewModel.swift */; };
 		2EAF9FB5276616D4002E01B6 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB4276616D4002E01B6 /* AlbumViewController.swift */; };
 		2EAF9FB8276616F0002E01B6 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB7276616F0002E01B6 /* AlbumViewModel.swift */; };
+		2EAF9FBA27662C28002E01B6 /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB927662C28002E01B6 /* GradientViewController.swift */; };
+		2EAF9FBD27662CA2002E01B6 /* UIViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FBC27662CA2002E01B6 /* UIViewCell.swift */; };
 		2EC343C3275B7170001D3DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C2275B7170001D3DD4 /* AppDelegate.swift */; };
 		2EC343C5275B7170001D3DD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */; };
 		2EC343C7275B7170001D3DD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C6275B7170001D3DD4 /* ViewController.swift */; };
@@ -97,6 +99,8 @@
 		2EAF9FB227661316002E01B6 /* AFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFViewModel.swift; sourceTree = "<group>"; };
 		2EAF9FB4276616D4002E01B6 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 		2EAF9FB7276616F0002E01B6 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		2EAF9FB927662C28002E01B6 /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		2EAF9FBC27662CA2002E01B6 /* UIViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewCell.swift; sourceTree = "<group>"; };
 		2EC343BF275B7170001D3DD4 /* SwfitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC343C2275B7170001D3DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				2E394A3F2760F1E80067E084 /* UIView */,
+				2EAF9FBB27662C2C002E01B6 /* GradientView */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -217,6 +222,7 @@
 			children = (
 				2E394A162760C4320067E084 /* UiinViewController.swift */,
 				2E394A2B2760C87E0067E084 /* UiinViewModel.swift */,
+				2EAF9FBC27662CA2002E01B6 /* UIViewCell.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -287,6 +293,14 @@
 				2EAF9FB7276616F0002E01B6 /* AlbumViewModel.swift */,
 			);
 			path = Album;
+			sourceTree = "<group>";
+		};
+		2EAF9FBB27662C2C002E01B6 /* GradientView */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF9FB927662C28002E01B6 /* GradientViewController.swift */,
+			);
+			path = GradientView;
 			sourceTree = "<group>";
 		};
 		2EC343B6275B7170001D3DD4 = {
@@ -623,6 +637,7 @@
 				2EC343C3275B7170001D3DD4 /* AppDelegate.swift in Sources */,
 				2EAF9F702763E97B002E01B6 /* VariableViewModel.swift in Sources */,
 				2E394A362760CEC90067E084 /* Definition.swift in Sources */,
+				2EAF9FBD27662CA2002E01B6 /* UIViewCell.swift in Sources */,
 				2EAF9FB8276616F0002E01B6 /* AlbumViewModel.swift in Sources */,
 				2E394A1F2760C45D0067E084 /* BaseViewController.swift in Sources */,
 				2E394A292760C4E50067E084 /* MograineUtil.swift in Sources */,
@@ -638,6 +653,7 @@
 				2EAF9F722763EA55002E01B6 /* VariableTableCell.swift in Sources */,
 				2E394A422760F2180067E084 /* LookupViewController.swift in Sources */,
 				2EAF9F6D2763E7DE002E01B6 /* VariableViewController.swift in Sources */,
+				2EAF9FBA27662C28002E01B6 /* GradientViewController.swift in Sources */,
 				2E394A452760F2D20067E084 /* DataTableCell.swift in Sources */,
 				2E394A342760CBD60067E084 /* UIStoryboard.swift in Sources */,
 				2EAF9FB0276612AF002E01B6 /* AFViewController.swift in Sources */,

@@ -17,7 +17,7 @@ class UiinViewModel{
     let output = Output()
     
     struct Input {
-        let list_Data = ["UI","데이터","추가"]
+        let list_Data = ["그라데이션"]
     }
     
     struct Output {
