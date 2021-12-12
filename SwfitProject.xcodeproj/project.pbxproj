@@ -31,6 +31,10 @@
 		2EAF9F6D2763E7DE002E01B6 /* VariableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9F6C2763E7DE002E01B6 /* VariableViewController.swift */; };
 		2EAF9F702763E97B002E01B6 /* VariableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9F6F2763E97B002E01B6 /* VariableViewModel.swift */; };
 		2EAF9F722763EA55002E01B6 /* VariableTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9F712763EA55002E01B6 /* VariableTableCell.swift */; };
+		2EAF9FB0276612AF002E01B6 /* AFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FAF276612AF002E01B6 /* AFViewController.swift */; };
+		2EAF9FB327661316002E01B6 /* AFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB227661316002E01B6 /* AFViewModel.swift */; };
+		2EAF9FB5276616D4002E01B6 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB4276616D4002E01B6 /* AlbumViewController.swift */; };
+		2EAF9FB8276616F0002E01B6 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAF9FB7276616F0002E01B6 /* AlbumViewModel.swift */; };
 		2EC343C3275B7170001D3DD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C2275B7170001D3DD4 /* AppDelegate.swift */; };
 		2EC343C5275B7170001D3DD4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */; };
 		2EC343C7275B7170001D3DD4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC343C6275B7170001D3DD4 /* ViewController.swift */; };
@@ -89,6 +93,10 @@
 		2EAF9F6C2763E7DE002E01B6 /* VariableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableViewController.swift; sourceTree = "<group>"; };
 		2EAF9F6F2763E97B002E01B6 /* VariableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableViewModel.swift; sourceTree = "<group>"; };
 		2EAF9F712763EA55002E01B6 /* VariableTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariableTableCell.swift; sourceTree = "<group>"; };
+		2EAF9FAF276612AF002E01B6 /* AFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFViewController.swift; sourceTree = "<group>"; };
+		2EAF9FB227661316002E01B6 /* AFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFViewModel.swift; sourceTree = "<group>"; };
+		2EAF9FB4276616D4002E01B6 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		2EAF9FB7276616F0002E01B6 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		2EC343BF275B7170001D3DD4 /* SwfitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EC343C2275B7170001D3DD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EC343C4275B7170001D3DD4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +177,8 @@
 			children = (
 				2E394A392760EB8F0067E084 /* Other */,
 				2E394A3C2760EBD40067E084 /* SwiftUI */,
+				2EAF9FB1276612B3002E01B6 /* AFView */,
+				2EAF9FB6276616DB002E01B6 /* Album */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -259,6 +269,24 @@
 				2EAF9F712763EA55002E01B6 /* VariableTableCell.swift */,
 			);
 			path = Variable;
+			sourceTree = "<group>";
+		};
+		2EAF9FB1276612B3002E01B6 /* AFView */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF9FAF276612AF002E01B6 /* AFViewController.swift */,
+				2EAF9FB227661316002E01B6 /* AFViewModel.swift */,
+			);
+			path = AFView;
+			sourceTree = "<group>";
+		};
+		2EAF9FB6276616DB002E01B6 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF9FB4276616D4002E01B6 /* AlbumViewController.swift */,
+				2EAF9FB7276616F0002E01B6 /* AlbumViewModel.swift */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		2EC343B6275B7170001D3DD4 = {
@@ -588,12 +616,14 @@
 			files = (
 				2E394A3B2760EBD00067E084 /* SwiftUIViewController.swift in Sources */,
 				2E394A2E2760C8AB0067E084 /* OtherViewModel.swift in Sources */,
+				2EAF9FB5276616D4002E01B6 /* AlbumViewController.swift in Sources */,
 				2E394A3E2760ED5B0067E084 /* SwiftUIView.swift in Sources */,
 				2E394A1A2760C4420067E084 /* DataViewController.swift in Sources */,
 				2EC343C7275B7170001D3DD4 /* ViewController.swift in Sources */,
 				2EC343C3275B7170001D3DD4 /* AppDelegate.swift in Sources */,
 				2EAF9F702763E97B002E01B6 /* VariableViewModel.swift in Sources */,
 				2E394A362760CEC90067E084 /* Definition.swift in Sources */,
+				2EAF9FB8276616F0002E01B6 /* AlbumViewModel.swift in Sources */,
 				2E394A1F2760C45D0067E084 /* BaseViewController.swift in Sources */,
 				2E394A292760C4E50067E084 /* MograineUtil.swift in Sources */,
 				2E394A2C2760C87E0067E084 /* UiinViewModel.swift in Sources */,
@@ -601,6 +631,7 @@
 				2EC343C5275B7170001D3DD4 /* SceneDelegate.swift in Sources */,
 				2E394A382760EA850067E084 /* OtherTableCell.swift in Sources */,
 				2E394A172760C4320067E084 /* UiinViewController.swift in Sources */,
+				2EAF9FB327661316002E01B6 /* AFViewModel.swift in Sources */,
 				2E394A472760F4000067E084 /* LookupViewModel.swift in Sources */,
 				2E394A322760C93F0067E084 /* ViewModel.swift in Sources */,
 				2E394A302760C8B90067E084 /* DataViewModel.swift in Sources */,
@@ -609,6 +640,7 @@
 				2EAF9F6D2763E7DE002E01B6 /* VariableViewController.swift in Sources */,
 				2E394A452760F2D20067E084 /* DataTableCell.swift in Sources */,
 				2E394A342760CBD60067E084 /* UIStoryboard.swift in Sources */,
+				2EAF9FB0276612AF002E01B6 /* AFViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,7 +820,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 53FTP5WM9N;
+				DEVELOPMENT_TEAM = BLF75TG683;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwfitProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -817,7 +849,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 53FTP5WM9N;
+				DEVELOPMENT_TEAM = BLF75TG683;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwfitProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

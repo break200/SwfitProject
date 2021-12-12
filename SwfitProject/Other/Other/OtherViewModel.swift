@@ -16,7 +16,7 @@ class OtherViewModel{
     let output = Output()
     
     struct Input {
-        let list_Data = ["SwiftUi 연결"]
+        let list_Data = ["SwiftUi 연결","통신 프로그래스","앨범 저장(영상,이미지) 영상 인스타공유"]
     }
     
     struct Output {

@@ -20,9 +20,6 @@ class ViewController: BaseViewController {
     @IBOutlet weak var btn_Other: UIButton!
     
     fileprivate(set) var viewModel = ViewModel()
-    
-    private var bag = DisposeBag()
-    
     let oneCall = OneCheckCall()
     
     override func viewDidLoad() {
@@ -163,7 +160,7 @@ class ViewController: BaseViewController {
                 return
             }
             self?.changeVCFromIndex(from: 0)
-        }.disposed(by: bag)
+        }.disposed(by:viewModel.bag)
         
         //Data 버튼
         btn_Data.rx.tap.bind { [weak self] _ in
@@ -171,7 +168,7 @@ class ViewController: BaseViewController {
                 return
             }
             self?.changeVCFromIndex(from: 1)
-        }.disposed(by: bag)
+        }.disposed(by: viewModel.bag)
         
         //Variable 버튼
         btn_Variable.rx.tap.bind { [weak self] _ in
@@ -179,7 +176,7 @@ class ViewController: BaseViewController {
                 return
             }
             self?.changeVCFromIndex(from: 2)
-        }.disposed(by: bag)
+        }.disposed(by: viewModel.bag)
         
         
         //Other 버튼
@@ -188,7 +185,7 @@ class ViewController: BaseViewController {
                 return
             }
             self?.changeVCFromIndex(from: 3)
-        }.disposed(by: bag)
+        }.disposed(by: viewModel.bag)
     }
     
 }

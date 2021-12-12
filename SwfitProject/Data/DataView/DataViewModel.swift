@@ -23,7 +23,7 @@ class DataViewModel{
         
     }
      
-    var disposeBag = DisposeBag()
+    var bag = DisposeBag()
 
     init() {
 

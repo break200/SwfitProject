@@ -23,9 +23,6 @@ class UiinViewController: BaseViewController {
     var delegate: (UiinViewDelegate)?
     
     fileprivate(set) var viewModel = UiinViewModel()
-    
-    private var bag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -27,7 +27,7 @@ class ViewModel{
         
     }
      
-    var disposeBag = DisposeBag()
+    var bag = DisposeBag()
 
     init() {
 

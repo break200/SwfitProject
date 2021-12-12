@@ -23,9 +23,6 @@ class OtherViewController: BaseViewController {
     var delegate: (OtherViewDelegate)?
     
     fileprivate(set) var viewModel = OtherViewModel()
-    
-    private var bag = DisposeBag()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -59,6 +56,12 @@ extension OtherViewController: UITableViewDelegate, UITableViewDataSource {
           case 0:
             let uiView : SwiftUIViewController = UIStoryboard.storyboard(storyboard: .Other).instantiateViewController()
             navigationController?.pushViewController(uiView, animated: true)
+        case 1:
+          let uiView : AFViewController = UIStoryboard.storyboard(storyboard: .Other).instantiateViewController()
+          navigationController?.pushViewController(uiView, animated: true)
+        case 2:
+          let uiView : AlbumViewController = UIStoryboard.storyboard(storyboard: .Other).instantiateViewController()
+          navigationController?.pushViewController(uiView, animated: true)
         default:
             return
         }

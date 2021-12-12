@@ -5,7 +5,7 @@
 //  Created by mograine on 2021/12/08.
 //
 
-import Foundation
+
 import UIKit
 import RxSwift
 import RxCocoa
@@ -36,7 +36,7 @@ class LookupViewModel{
         
     }
      
-    var disposeBag = DisposeBag()
+    var bag = DisposeBag()
 
     init() {
 

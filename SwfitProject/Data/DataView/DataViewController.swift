@@ -24,9 +24,7 @@ class DataViewController: BaseViewController {
     var delegate: (DataViewDelegate)?
     
     fileprivate(set) var viewModel = DataViewModel()
-    
-    private var bag = DisposeBag()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

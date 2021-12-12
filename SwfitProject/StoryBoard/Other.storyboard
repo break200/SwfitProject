@@ -79,8 +79,145 @@
             </objects>
             <point key="canvasLocation" x="917" y="110"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="CC1-7q-WzH">
+            <objects>
+                <viewController storyboardIdentifier="AFViewController" id="XVx-MV-8q3" customClass="AFViewController" customModule="SwfitProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BJk-25-j57">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QhF-AE-YKa">
+                                <rect key="frame" x="30" y="94" width="354" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnO-Hl-P3r">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWl-Uy-cBt">
+                                        <rect key="frame" x="0.0" y="39" width="354" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="6A7-hq-q9F"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NoI-Ef-YVL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NoI-Ef-YVL" firstAttribute="trailing" secondItem="QhF-AE-YKa" secondAttribute="trailing" constant="30" id="EGx-jD-ecg"/>
+                            <constraint firstItem="QhF-AE-YKa" firstAttribute="top" secondItem="NoI-Ef-YVL" secondAttribute="top" constant="50" id="POB-so-wxi"/>
+                            <constraint firstItem="QhF-AE-YKa" firstAttribute="leading" secondItem="NoI-Ef-YVL" secondAttribute="leading" constant="30" id="hMp-3n-5d7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_Progress" destination="xWl-Uy-cBt" id="GP3-gw-DF2"/>
+                        <outlet property="lab_Int" destination="OnO-Hl-P3r" id="ESv-XP-C3j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iD9-zE-fch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1664" y="110"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="wrg-XA-mLf">
+            <objects>
+                <viewController storyboardIdentifier="AlbumViewController" id="MIo-bQ-eh2" customClass="AlbumViewController" customModule="SwfitProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MZd-vX-D1S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HlL-D1-nO2">
+                                <rect key="frame" x="0.0" y="44" width="414" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="Gsb-b2-5dO">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="1si-Yd-DDW"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N0a-uO-Ogc">
+                                        <rect key="frame" x="207" y="0.0" width="207" height="150"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="d8o-6v-An3"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lo-Cd-SJV">
+                                <rect key="frame" x="174" y="244" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Bxg-gI-Gs0"/>
+                                    <constraint firstAttribute="height" constant="60" id="F9Q-19-H5D"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="이미지저장"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk6-p5-m4z">
+                                <rect key="frame" x="20" y="344" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="vYk-83-E3A"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="영상저장,앨범, 인스타공유"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wz7-jX-Ws5">
+                                <rect key="frame" x="30" y="444" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="79e-E7-2vM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="도규먼트 파일체크"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGo-bc-Vra">
+                                <rect key="frame" x="20" y="514" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0JE-8U-kkc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="도규먼트 파일가져오기"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tjz-Im-D1J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HlL-D1-nO2" secondAttribute="trailing" id="Azr-2i-sDT"/>
+                            <constraint firstItem="9Lo-Cd-SJV" firstAttribute="leading" secondItem="tjz-Im-D1J" secondAttribute="leading" constant="174" id="Dqw-sU-cI9"/>
+                            <constraint firstItem="Wz7-jX-Ws5" firstAttribute="leading" secondItem="tjz-Im-D1J" secondAttribute="leading" constant="30" id="FWh-CS-LW4"/>
+                            <constraint firstItem="Gk6-p5-m4z" firstAttribute="leading" secondItem="tjz-Im-D1J" secondAttribute="leading" constant="20" id="IV7-Ns-jbE"/>
+                            <constraint firstItem="tjz-Im-D1J" firstAttribute="trailing" secondItem="TGo-bc-Vra" secondAttribute="trailing" constant="20" id="Szq-uc-rHK"/>
+                            <constraint firstItem="Wz7-jX-Ws5" firstAttribute="top" secondItem="Gk6-p5-m4z" secondAttribute="bottom" constant="40" id="TLP-Ey-vKu"/>
+                            <constraint firstItem="9Lo-Cd-SJV" firstAttribute="top" secondItem="HlL-D1-nO2" secondAttribute="bottom" constant="50" id="byY-3m-KpF"/>
+                            <constraint firstItem="HlL-D1-nO2" firstAttribute="top" secondItem="tjz-Im-D1J" secondAttribute="top" id="eDQ-Ud-6mj"/>
+                            <constraint firstItem="tjz-Im-D1J" firstAttribute="trailing" secondItem="Gk6-p5-m4z" secondAttribute="trailing" constant="20" id="mYz-Ey-bkF"/>
+                            <constraint firstItem="TGo-bc-Vra" firstAttribute="top" secondItem="Wz7-jX-Ws5" secondAttribute="bottom" constant="20" id="nHA-IW-B3z"/>
+                            <constraint firstItem="Gk6-p5-m4z" firstAttribute="top" secondItem="9Lo-Cd-SJV" secondAttribute="bottom" constant="40" id="rBD-Yf-DIV"/>
+                            <constraint firstItem="TGo-bc-Vra" firstAttribute="leading" secondItem="tjz-Im-D1J" secondAttribute="leading" constant="20" id="vpu-xC-Ym6"/>
+                            <constraint firstItem="HlL-D1-nO2" firstAttribute="leading" secondItem="tjz-Im-D1J" secondAttribute="leading" id="wlv-ik-YAx"/>
+                            <constraint firstItem="tjz-Im-D1J" firstAttribute="trailing" secondItem="Wz7-jX-Ws5" secondAttribute="trailing" constant="30" id="wwT-ds-SYC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_Album" destination="9Lo-Cd-SJV" id="qbT-V7-Ige"/>
+                        <outlet property="btn_ImageGet" destination="TGo-bc-Vra" id="lNU-LN-DvB"/>
+                        <outlet property="btn_Isexit" destination="Wz7-jX-Ws5" id="kVT-qA-efa"/>
+                        <outlet property="btn_Mp3" destination="Gk6-p5-m4z" id="Pcx-GW-k2s"/>
+                        <outlet property="img" destination="Gsb-b2-5dO" id="fE1-Cs-QvE"/>
+                        <outlet property="img_Back" destination="N0a-uO-Ogc" id="a5E-Cu-y8n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tix-zZ-TFf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2467" y="110"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="test" width="359.5" height="403.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
